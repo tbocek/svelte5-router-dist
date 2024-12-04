@@ -1,0 +1,39 @@
+{
+  "name": "@mateothegreat/svelte5-router",
+  "version": "0.1.35",
+  "type": "module",
+  "svelte": "./index.js",
+  "main": "./index.js",
+  "module": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./index.js"
+    }
+  },
+  "files": [
+    "./"
+  ],
+  "scripts": {
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "build": "svelte-package && cp readme.md package.json dist",
+    "release": "svelte-package && cp package.json dist/package.json && cd dist && npm publish --access public"
+  },
+  "devDependencies": {
+    "@sveltejs/package": "^2.3.7",
+    "@tsconfig/svelte": "^5.0.4",
+    "@types/node": "^22.10.1",
+    "cpx": "^1.5.0",
+    "prettier": "^3.4.1",
+    "prettier-plugin-svelte": "^3.3.2",
+    "rimraf": "^6.0.1",
+    "svelte": "^5.2.11",
+    "svelte-check": "^4.1.0",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.6"
+  },
+  "peerDependencies": {
+    "svelte": "^5.0.0"
+  }
+}
