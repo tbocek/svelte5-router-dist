@@ -13,7 +13,13 @@
     }
   },
   "files": [
-    "./"
+    "actions/",
+    "*.js",
+    "*.d.ts",
+    "*.svelte",
+    "router.svelte",
+    "instance.svelte",
+    "query.svelte"
   ],
   "scripts": {
     "check": "svelte-check --tsconfig ./tsconfig.json",
